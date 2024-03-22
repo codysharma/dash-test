@@ -4,7 +4,7 @@ body {
   /* display: flex;
   justify-content: flex-end; */
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 40% 60%;
   position: relative;
   /* background-image: url(../img/antelope_bg.jpg);
   background-position: right;
@@ -1862,7 +1862,7 @@ color: darkgrey;
 .album-picture {
   /* max-width: 30% */
   height: 100vh;
-  width: 30%;
+  width: 40%;
   top: 0;
   left: 0;
   position: fixed;
