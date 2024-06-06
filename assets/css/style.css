@@ -1,5 +1,6 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Montserrat", sans-serif;
   color: #444444;
 }
 
@@ -167,6 +168,7 @@ h6 {
 .navbar {
   padding: 0;
   position: static;
+  display: none;
 }
 
 .navbar ul {
@@ -491,10 +493,12 @@ h6 {
 
 #hero h5 {
   color: white;
+  padding-top: -20%;
+  text-emphasis: bold;
 }
 
 #hero-text {
-  padding-top: 100px;
+  /* padding-top: -20%; */
 }
 
 #hero .btn-get-started {
@@ -533,6 +537,14 @@ h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+
+  /* #hero h5 {
+    background-position-y: 105%;
+  } */
+
+  #scrollButton {
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -549,15 +561,18 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-top: 15em;
+
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
   position: relative;
   margin-bottom: 30px;
-  color: #2f4d5a;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
   z-index: 2;
 }
 
@@ -1545,17 +1560,26 @@ section {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
+  #hotel-address {
+    max-width: 200px;
+  }
 }
 
 .about-btn {
   display: inline-block;
-  background: #5b7cb5;
+  background: #ffffff00;
   padding: 6px 10px 8px 15px;
   color: #fff;
   border-radius: 50px;
   transition: 0.3s;
   position: relative;
+  border: 2px solid white;
 }
+
+.about-btn:hover {
+  background-color: #ffffff4f;
+  color: white;
+} 
 
 .resume .resume-title {
   font-size: 26px;
@@ -1568,7 +1592,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #6d425d;
+  border-left: 2px solid #497659;
   position: relative;
 }
 
@@ -1578,7 +1602,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #6d425d;
+  color: #497659;
   margin-bottom: 10px;
 }
 
@@ -1612,7 +1636,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #6d425d;
+  border: 2px solid #497659;
 }
 
 #schedule {
@@ -1634,6 +1658,12 @@ section {
   margin: auto;
   align-items: center;
   justify-content: center;
+  /* background-color: #497659; */
+  background-image: url(../img/bhangra-silhouette-abstract-01.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100px;
 }
 
 @media (width <= 800px) {
@@ -1666,8 +1696,17 @@ section {
   color: black;
 }
 
+#rsvp {
+  /* padding-top: 200px; */
+  position: absolute;
+  bottom: 10px;
+  border: 3px solid white;
+  padding: 5px;
+}
+
 #rsvp p{
   color: white;
+
 }
 
 .mySlides {
@@ -1676,6 +1715,7 @@ section {
   margin: 20px;  
   background-color: #ffffffa1;
   border-radius: 20px;
+  transition: 1s ease;
 }
 
 .mySlides h3 {
@@ -1697,13 +1737,17 @@ section {
   height: 300px;
 }
 
+#aboutus .section-title {
+  padding-top: 0em;;
+}
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
   display: inline;
   align-items: center;
-  left: 20%;
+  left: 10%;
   transition: 1s ease;
 }
 
@@ -1756,7 +1800,7 @@ background-color: #717171;
 }
 
 #faqs {
-  background-color: #fff1da;
+  /* background-color: #fff1da; */
   /* background: url("../img/familyportrait_portrait_bg.png") no-repeat; */
   background-size: cover;
   background-position: center;
@@ -1807,7 +1851,7 @@ background-color: #717171;
 }
 
 #aboutus {
- 
+ background-color: white;
 }
 
 #our-story-title {
@@ -1826,40 +1870,96 @@ color: darkgrey;
 }
 
 .picture-title {
-  height: 100px;
+  height: 40em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
 }
 
 #picture-title-venue {
-  background-image: url(../img/antelope.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url(../img/antelope_bg.jpg);
   background-position-y: 20%;
 }
 
+
+
 #picture-title-travel{
-  background-image: url(../img/joshuatree.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url(../img/joshuatree_bg.jpg);
   background-position-y: 35%;
 }
 
 #picture-title-schedule{
-  background-image: url(../img/greatsanddunes.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url(../img/greatsanddunes_bg.jpg);
   background-position-y: 35%;
 }
 
 #picture-title-gifts{
   background-image: url(../img/horseshoebend.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position-y: 35%;
 }
 
 #picture-title-faqs{
-  background-image: url(../img/familyportrait_portrait_bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: 5%;
+  background-image: url(../img/familyportrait_portrait.jpg);
+  background-position-y: 40%;
+}
+
+#picture-title-contact {
+  background-image: url(../img/pjs_landscape.jpg);
+  background-position-y: 40%;
+  background-position: center;
+}
+
+#aside-travelbureau {
+  background-color: #E39845;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+#travel-btn {
+  color: #E39845;
+  background-color: white;
+}
+
+#travel-btn:hover {
+  background-color: #e39945;
+  color: white;
+}
+
+#otherActivities img {
+  max-width: 100%;
+}
+
+#hotelPicture {
+  max-width: 100%;
+}
+
+#venue .about-btn {
+  background-color: #5B7CB5;
+} 
+
+#venue .about-btn:hover {
+  background-color: rgb(129, 151, 194)
+} 
+
+.col-lg-6 {
+  padding-bottom: 2rem;
+}
+
+#googlemap {
+  max-width: 100%;
+}
+
+#venue h2 {
+  color: #6D425D;
+}
+
+#travel h2 {
+  color: #e39845;
+}
+
+#schedule h2 {
+  color: #497659;
 }
